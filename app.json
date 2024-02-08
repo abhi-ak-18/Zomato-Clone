@@ -18,13 +18,35 @@
       "supportsTablet": true
     },
     "android": {
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ],
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.abhi_ak_18.Zoma2Clone",
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR_API_KEY"
+        }
       }
     },
+    "scheme": "zomaclone",
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "68667d1f-6c42-428e-b970-cb2985edac6b"
+      }
     }
   }
 }
